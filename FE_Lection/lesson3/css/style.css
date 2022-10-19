@@ -1,0 +1,36 @@
+
+ .todo-list{
+  list-style-type: "@";
+ }
+
+
+ul {
+  list-style-image: url("../images/favicon.ico");
+  list-style-position: inside;
+  
+   list-style: square url(../images/favicon.ico) outside;
+}
+table{
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;;
+}
+table, th, td{
+  border: 1px dotted;
+  border-collapse: collapse;
+}
+.thead{
+  background-color: aquamarine;
+}
+.row-1{
+  background-color: beige;
+}
+.row-2{
+  background-color: chartreuse;
+}
+.row-2 td:nth-child(2){
+  background-color: coral;
+}
+.row-1 td:nth-child(3n-2){
+  color: red;
+}

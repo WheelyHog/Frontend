@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {}
+
+.contact {
+  border: 1px solid blue;
+  padding-top: 20px;
+  margin: 10px auto;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-image img {
+  margin: 0 auto;
+  width: 100%;
+}
