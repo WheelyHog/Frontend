@@ -6,6 +6,9 @@ This repository was created for studiing Git, Github and Frontend Web Developing
 https://wheelyhog.github.io/Frontend/FE_Homework/FE12102022/
 https://wheelyhog.github.io/Frontend/FE_Homework/Homework_30_09_2022/
 
+### FE_Tasks:
+https://wheelyhog.github.io/Frontend/FE_Tasks/FE_T171022/
+
 ### FE_Other:
 https://wheelyhog.github.io/Frontend/FE_Other/Hover-box/
 
