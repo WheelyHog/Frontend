@@ -84,10 +84,10 @@ form {
 
 }
 
-.input-name {
-  /* border-bottom: 2px solid #5FC3CA; */
-  /* border-bottom: 2px solid #c0c0c0; */
-}
+/* .input-name {
+   border-bottom: 2px solid #5FC3CA; 
+   border-bottom: 2px solid #c0c0c0; 
+ } */ 
 .input-name>span.border {
   position: absolute;
   bottom: 0;
