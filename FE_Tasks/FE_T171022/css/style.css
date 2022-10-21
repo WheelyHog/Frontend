@@ -25,6 +25,7 @@ body {
   flex: 1;
 }
 
+
 .form-wrapper {
   background-color: lightgray;
 }
@@ -41,13 +42,14 @@ body {
 
 }
 
-.form-title{
+.form-title {
   margin-bottom: 30px;
 }
 
-label{
+label {
   margin: 0 auto 3px;
 }
+
 input {
   width: 70%;
   padding: 10px;
@@ -56,7 +58,8 @@ input {
   border-radius: 5px;
   margin: 0 auto 30px;
 }
-.submit-btn{
+
+.submit-btn {
   width: 200px;
   padding: 10px;
   border-radius: 5px;
