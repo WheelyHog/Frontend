@@ -72,6 +72,9 @@ input {
   cursor: pointer;
 }
 
+figure{
+  line-height: 0;
+}
 
 .picture {
   width: 100%;
