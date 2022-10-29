@@ -100,7 +100,17 @@ header {
   height: 350px;
   background-repeat: no-repeat;
   background-size: 100%;
-
+  position: relative;
+ 
+}
+.project-img:hover::after{
+  content: '';
+  background-color:rgba(0, 0, 0, .1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 #contacts {
