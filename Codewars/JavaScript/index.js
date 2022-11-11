@@ -59,7 +59,8 @@ function arrayDiff(a, b) {
           console.log(item !== b[i]);
           return item;
         }
-      });a = arr3;
+      });
+      a = arr3;
     }
     }
     // arr3 = a;
