@@ -45,15 +45,15 @@ for (let i = 0; i < products.length; i++) {
 // 2. Написать функцию, которая получает в качестве аргумента массив из объектов и возвращает объект с самым дорогим товаром (без учета скидки)
 
 function getMaxPrice(products) {
+  let mExProduct = {};
   let maxPrice = products[0].price;
   let minPrice = products[0].price;
-  let maxId = 0;
   let minId = 0;
   let allPrice = 0;
   for (let i = 0; i < products.length; i++) {
     if (maxPrice <= products[i].price) {
       maxPrice = products[i].price;
-      maxId = i;
+      mExProduct = products[i];
     }
     if (minPrice >= products[i].price) {
       minPrice = products[i].price;
@@ -61,7 +61,8 @@ function getMaxPrice(products) {
     }
     allPrice += products[i].quantity * products[i].price;
   }
-  console.log("the most expensive product : " + products[maxId].title + ", price : " + products[maxId].price);
+  console.log("the most expensive product : " + mExProduct.title + ", price : " + mExProduct.price);
+  console.log(mExProduct);
   console.log("the cheapest product : " + products[minId].title + ", price : " + products[minId].price);
   console.log("Price of all items = " + allPrice);
 }
