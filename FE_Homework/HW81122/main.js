@@ -48,9 +48,17 @@
 
 
 // 4 -----------------
-function tempFar(tempC) {
-  tempFar = tempC * 1.8 + 32;
-  console.log(tempC + " degrees in Celsium = " + (Math.round(tempFar) + " degrees in Fahrenheit"));
-}
+// function tempFar(tempC) {
+//   tempFar = tempC * 1.8 + 32;
+//   console.log(tempC + " degrees in Celsium = " + (Math.round(tempFar) + " degrees in Fahrenheit"));
+// }
+//
+// tempFar(37);
 
-tempFar(37);
+
+
+const display = document.getElementById("название_моего div");
+
+ let result = "";
+ car.forEach((item) => {const htmlDiv = <h1>${item.title, .price, .count }</h1>;result += htmlDiv;});
+display.innerHTML = result;

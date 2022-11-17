@@ -50,7 +50,7 @@ for (i = 0; i < cars.length; i++) {
 let totalPrice = 0;
 let totalCount = 0;
 for (let i = 0; i < cars.length; i++) {
-  totalPrice += +cars[i].price;
+  totalPrice += cars[i].price * cars[i].count;
   totalCount += +cars[i].count;
 }
 const para = document.createElement("p");
