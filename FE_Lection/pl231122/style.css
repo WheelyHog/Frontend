@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .active{
+  color: green;
+  background-color: aquamarine;
+} */
+
+.show{
+display: block;
+}
+
+.hide{
+  display: none;
+}
+
+div{
+  border: 1px solid black;
+  width: 69px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  display: inline-block;
+  margin-right: 5px;
+}
