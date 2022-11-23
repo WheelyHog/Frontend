@@ -7,8 +7,12 @@ https://wheelyhog.github.io/Frontend/FE_Homework/FE12102022/
 https://wheelyhog.github.io/Frontend/FE_Homework/Homework_30_09_2022/
 https://wheelyhog.github.io/Frontend/FE_Homework/HW221022/
 https://wheelyhog.github.io/Frontend/FE_Homework/HW281022/
+https://wheelyhog.github.io/Frontend/FE_Homework/HW51122/
+https://wheelyhog.github.io/Frontend/FE_Homework/HW81122/
 https://wheelyhog.github.io/Frontend/FE_Homework/HW161122/
 https://wheelyhog.github.io/Frontend/FE_Homework/HW211122/
+https://wheelyhog.github.io/Frontend/FE_Homework/HW221122/
+https://wheelyhog.github.io/Frontend/FE_Homework/HW231122/
 
 
 ##### FE_Tasks:
