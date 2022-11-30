@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+
   <!-- <form name="test-form">
     <label for="first-name">Name</label><br>
     <input type="text" id="first-name" required><br>
@@ -18,7 +20,7 @@
     <button type="submit">Send</button>
   </form> -->
 
-  <form id="form">
+  <form id="form" class="form">
     <div class="inputs">
       <input id="title" type="text" placeholder="title" name="title">
       <input id="price" type="number" placeholder="price" name="price">
@@ -26,10 +28,20 @@
     <button>Add</button>
   </form>
 
+  <form id="form2" class="form">
+    <input id="filter" type="text" placeholder="Title" name="filter">
+  </form>
+
+  <div>
+    <p>Sort by: </p>
+    <button id="sortPrice">Price</button>
+  </div>
+
   <section id="products">
-    
+
   </section>
 
   <script src="main.js"></script>
 </body>
+
 </html>
