@@ -26,22 +26,27 @@ const images = [
   "https://vot-enot.com/wp-content/uploads/2021/11/94895c23dcc1cf7.jpg"
 ];
 
-const imgSlider =document.querySelector(".img_slider");
-let imgIndex =0;
+const imgSlider = document.querySelector(".img_slider");
+let imgIndex = 0;
 
 imgSlider.addEventListener("click", (event) => {
   event.target.src = images[imgIndex++ % images.length]
 })
 
-imgIndex++ %images.length;
+// imgIndex++ %images.length;
 
 
 
-const imgSlider2 = document.querySelector('.img_slider_2');
+const imgSlider2 = document.querySelector('.img_slider2');
 const left_btn = document.querySelector('.left_btn');
 const right_btn = document.querySelector('.right_btn');
 
-let imgIndex2 = 0;
+let imgIndex2 = 4;
 
-right_btn.addEventListener('click', (event) => event.target.src = images[imgIndex2++ % images.length]);
-right_btn.addEventListener('click', () => imgSlider2.src = images[imgIndex2++ % images.length]);
+right_btn.addEventListener('click', () => {
+  imgSlider2.src = images[++imgIndex2 % images.length];
+});
+left_btn.addEventListener('click', () => {
+
+  imgSlider2.src = images[--imgIndex2 % images.length];
+});
