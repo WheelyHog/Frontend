@@ -44,12 +44,16 @@ const right_btn = document.querySelector('.right_btn');
 let imgIndex2 = 0;
 
 right_btn.addEventListener('click', () => {
-  // imgSlider2.src = images[++imgIndex2 % images.length];
-  console.log(++imgIndex2 % images.length);
+  imgSlider2.src = images[++imgIndex2 % images.length];
+  // console.log(++imgIndex2 % images.length);
 });
 left_btn.addEventListener('click', () => {
-  // imgSlider2.src = images[--imgIndex2 % images.length];
-  
-  imgIndex2 = Math.abs(imgIndex2);
-  console.log(--imgIndex2 % images.length);
+  imgSlider2.src = images[--imgIndex2 % images.length];
+
+  if (imgIndex2 === 0){
+    imgIndex2 = images.length;
+  }
+
+  // imgIndex2 = Math.abs(imgIndex2);
+  // console.log(--imgIndex2 % images.length);
 });
