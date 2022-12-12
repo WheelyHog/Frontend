@@ -82,6 +82,16 @@
   background-color: #00868A;
   color: #fff;
   font-style: italic;
+  height: 114px;
+  display: flex;
+  align-items: center;
+  padding: 25px 30px;
+  justify-content: space-between;
+}
+
+.card_descr p{
+  font-size: 21px;
+  font-weight: 400;
 }
 
 .arrow_container{
@@ -91,4 +101,63 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.gallery{
+  margin: 140px auto;
+  max-width: 1295px;
+}
+
+.cards_container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.gallery h2{
+  font-size: 48px;
+  font-weight: 400;
+  font-style: italic;
+  color: #00868A;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.social{
+  display: flex;
+  justify-content: center;
+
+}
+.social i{
+color: #00868A;
+font-size: 24px;
+height: 90px;
+width: 80px;
+border: 1px solid #c4c4c4;
+text-align: center;
+align-items: center;
+line-height: 80px;
+cursor: pointer;
+}
+
+.footer_block{
+  display: flex;
+  justify-content: end;
+  max-width: 1295px;  
+  margin: 31px auto;
+  border: 1px solid #c4c4c4;
+  border-bottom-color: transparent;
+}
+
+.subheader{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1295px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.subheader img{
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
 }
