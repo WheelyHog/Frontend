@@ -198,6 +198,54 @@ header {
   cursor: pointer;
 }
 
+/* -------------------busy ----------------------- */
+.busy {
+  text-align: center;
+}
+
+.busy-title {
+  margin: 100px auto 66px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.busy-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+
+.busy-item {
+  width: 350px;
+  background-color: #F7F7F7;
+  padding: 59px 89px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-image {
+  width: 60px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+.item-title {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+
+}
+
 @media screen and (max-width: 1200px) {
   .about-items {
     grid-template-columns: repeat(2, 1fr);
@@ -208,7 +256,7 @@ header {
     padding: 430px 15px 100px;
   }
 
-  .contact-content{
+  .contact-content {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -234,7 +282,8 @@ header {
     flex-direction: column;
     align-items: center;
   }
-  .contact-content{
+
+  .contact-content {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
