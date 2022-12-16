@@ -16,9 +16,10 @@ h3 {
 /* ----------- banner--------------- */
 .banner {
   background-image: url(./images/banner.png);
-  min-height: 780px;
+  height: 780px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .container {
@@ -27,7 +28,7 @@ h3 {
 }
 
 .banner-text {
-  width: 590px;
+  width: 592px;
   height: 300px;
   padding-top: 200px;
 }
@@ -52,6 +53,39 @@ h3 {
   background-color: #005FA3;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .banner {
+    height: 670px;
+  }
+
+  .banner-text {
+    padding-top: 150px;
+    /* padding-bottom: 280px; */
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+@media (max-width:860px) {
+  .container {
+    max-width: 592px;
+  }
+}
+
+@media (max-width: 754px) {
+  .banner {
+    background-image: url("./images/banner-small.png");
+  }
 }
 
 /* ---------------------services---------------- */
@@ -80,9 +114,10 @@ h3 {
 }
 
 .services-items {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   padding-bottom: 140px;
 }
 
@@ -94,11 +129,40 @@ h3 {
 
 .services-item-title {
   font-family: 'Lato', sans-serif;
-  font-weight: 7;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
   padding: 260px 118px 45px 45px;
+}
+
+@media (max-width: 1200px) {
+  .services-items {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+@media (max-width:860px) {
+  .services-items {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .services-item {
+    background-image: url("./images/service-small.png");
+    width: 592px;
+  }
+
+  .services-item-title {
+    width: 316px;
+  }
+}
+
+@media (max-width: 754px) {
+  .services-subtitle {
+    margin-bottom: 17px;
+  }
 }
 
 /* ----------------- about ------------------- */
@@ -181,6 +245,40 @@ h3 {
   color: #005fa3;
 }
 
+@media (max-width: 1024px) {
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 754px) {
+  .about-subtitle {
+    margin-top: 110px;
+  }
+
+  .about-right {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 15px;
+  }
+
+  .about-item {
+    width: 592px;
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 33px 0 0 0;
+  }
+
+  .about-item-p {
+    width: 143px;
+  }
+
+}
+
+
 /* --------------- contact ---------------------- */
 .contact {
   background-image: url("./images/contact-bg.png");
@@ -192,12 +290,12 @@ h3 {
   padding-top: 135px;
   padding-bottom: 140px;
   display: flex;
+  justify-content: space-between;
   gap: 100px;
+
 }
-.contact-info,
-.contact-form{
-  width: 540px;
-}
+
+
 .contact-title {
   font-weight: 700;
   font-size: 48px;
@@ -205,20 +303,25 @@ h3 {
   color: #FFFFFF;
   margin-bottom: 60px;
 }
-.contact-links{
+
+.contact-links {
   text-align: right;
 }
-.contact-tel{
+
+.contact-tel {
   margin-right: 95px;
 }
-.contact-email{
-position: relative;
+
+.contact-email {
+  position: relative;
 }
-.contact-email img{
+
+.contact-email img {
   position: absolute;
   top: 0;
   left: -55px;
 }
+
 .contact-text {
   font-weight: 300;
   font-size: 18px;
@@ -248,11 +351,18 @@ position: relative;
 .contact-userdata {
   display: flex;
   margin-bottom: 35px;
+  justify-content: space-between;
   gap: 30px;
+}
+
+.userdata-name input,
+.userdata-surname input {
+  width: 100%;
 }
 
 .input-name,
 .input-surname {
+
   margin-top: 15px;
   background-color: transparent;
   color: #bdbdbd;
@@ -260,7 +370,6 @@ position: relative;
   font-size: 21px;
   line-height: 29px;
   outline: none;
-  width: 255px;
   border: none;
   border-bottom: 1px solid #bdbdbd;
 }
@@ -284,4 +393,40 @@ position: relative;
   align-self: flex-end;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .contact-wrapper {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .userdata-name,
+  .userdata-surname {
+    width: 400px;
+  }
+
+  .contact-btn {
+    margin-right: 70px;
+  }
+}
+
+footer {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  height: 120px;
+}
+
+.footer-wrapper {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
