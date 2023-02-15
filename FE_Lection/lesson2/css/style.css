@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url("../images/wallpaper.jpg");
+}
+
+h1{
+  text-align: center;
+  color: blueviolet;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+
+.hobby,
+.work,
+.dream{
+  margin: 10px 40px;
+  padding: 30px;
+  border: 1px solid blue;
+}
+
+.hobby img{
+  height: 150px;
+  border-radius: 100%;
+}
+
+.work img{
+  height: 150px;
+  border-radius: 100%;
+}
+
+.dream img{
+  height: 150px;
+  border-radius: 100%;
+}
+
+.hobby h2,
+.work h2,
+.dream h2{
+  color: brown;
+  margin: 10px;
+  font-size: 40px;
+}
+
+.social-icons{
+  margin: 30px auto;
+  text-align: center;
+  border: 1px solid red;
+  width: 600px;
+}
+.social-icons a img{
+  height: 60px;
+  width: 60px;
+  margin: 20px;
+  padding: 30px 30px;
+  
+}

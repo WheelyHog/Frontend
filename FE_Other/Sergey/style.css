@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #0c4914, #023510);
+}
+
+main {
+  display: flex;
+}
+
+.container,
+figure {
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+form {
+  align-content: center;
+  background: linear-gradient(to right, #757975, #a5e7b6);
+  padding: 0 100px;
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+h1 {
+  padding-left: 5px;
+  border-left: 5px solid rgb(11, 115, 32);
+  margin: 45px 0;
+}
+
+.inputField {
+  position: relative;
+  width: 300px;
+  height: 46px;
+  margin-bottom: 35px;
+}
+
+.inputField input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid #111;
+  background: transparent;
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 16px;
+  color: #111;
+  font-weight: 300;
+}
+
+.inputField span {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  color: #111;
+  font-weight: 300;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.inputField input:focus~span,
+.inputField input:valid~span {
+  font-size: 12px;
+  color: #111;
+  transform: translate(-10px, -32px);
+}
+
+#registration-photo {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+
+}
+
+
+
+.registerButton {
+  margin: 80px auto;
+  margin-bottom: 70px;
+  border: none;
+  height: 50px;
+  width: 200px;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+}

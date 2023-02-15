@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ----------------- header ----------------- */
+header {
+  background-image: url("./images/Rectangle.jpg");
+  min-height: 740px;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.h1 {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  max-width: 734px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.header-h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+
+/* -------------- about ------------------- */
+
+.about {
+  min-height: 1080px;
+  position: relative;
+  padding-top: 250px;
+  text-align: center;
+}
+
+.experience {
+  position: absolute;
+  min-height: 300px;
+  background-color: #F7F7F7;
+  padding: 57px 130px;
+  top: -150px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.about-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.about-item {
+  width: 190px;
+  text-align: center;
+}
+
+.about-h4 {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 107px;
+  color: #F7654A;
+}
+
+.about-h5 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #000000;
+
+}
+
+.about-p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #999999;
+}
+
+
+
+/* ----------------- projects --------------- */
+
+.projects-h2 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #404149;
+  margin-bottom: 60px;
+}
+
+.projects {
+  display: flex;
+  gap: 30px;
+}
+
+.project {
+  max-width: 350px;
+  text-align: left;
+}
+
+.project-image {
+  margin-bottom: 45px;
+}
+
+.line {
+  width: 55px;
+  height: 6px;
+  background: #F7654A;
+  margin-bottom: 15px;
+}
+
+.project-h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #404149;
+  margin-bottom: 20px;
+}
+
+.project-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* --------------- contact --------------- */
+
+.contact {
+  background-color: #F7654A;
+  font-weight: 700;
+  color: #FFFFFF;
+  padding-bottom: 45px;
+  padding-top: 30px;
+  letter-spacing: 0.02em;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-h2 {
+  font-size: 48px;
+  line-height: 71px;
+}
+
+.contact-h4 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.contact-button {
+  width: 175px;
+  height: 49px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  font-family: 'Oswald', sans-serif;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* -------------------busy ----------------------- */
+.busy {
+  text-align: center;
+}
+
+.busy-title {
+  margin: 100px auto 66px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.busy-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+
+.busy-item {
+  width: 350px;
+  background-color: #F7F7F7;
+  padding: 59px 89px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-image {
+  width: 60px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+.item-title {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+
+}
+
+@media screen and (max-width: 1200px) {
+  .about-items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .about {
+    padding: 430px 15px 100px;
+  }
+
+  .contact-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .about-items {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .experience {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .about {
+    padding-top: 850px;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-content {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}

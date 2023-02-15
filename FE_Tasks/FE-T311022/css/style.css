@@ -1,0 +1,28 @@
+:root{
+--menu-width: 250px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: gold;
+  transform: translateX(calc(var(--menu-width)* -1));
+  transition: all .3s ease-out;
+}
+menu.is-open{
+ transform: translateX(0);
+}

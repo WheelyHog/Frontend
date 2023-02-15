@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="box-inner" class="box-inner" onmouseover="myscriptOn()" onmouseout="myscriptOff()">
+      <div class="row">
+        <div class="l-u">
+          <div class="l-u-3"></div>
+          <div class="l-u-1">1</div>
+        </div>
+        <div class="r-u">
+          <div class="r-u-4"></div>
+          <div class="r-u-2">2</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="l-d">
+          <div class="l-d-3">3</div>
+          <div class="l-d-1"></div>
+        </div>
+        <div class="r-d">
+          <div class="r-d-4">4</div>
+          <div class="r-d-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-inner2" class="box-inner2">
+      <div class="row">
+        <div class="l-u2">
+          <div class="l-u-4"></div>
+          <div class="l-u-1">1</div>
+        </div>
+        <div class="r-u2">
+          <div class="r-u-1"></div>
+          <div class="r-u-2">2</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="l-d2">
+          <div class="l-d-3">3</div>
+          <div class="l-d-12"></div>
+        </div>
+        <div class="r-d2">
+          <div class="r-d-4">4</div>
+          <div class="r-d-22"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function myscriptOn() {
+      document.getElementById("box-inner").style.display = "none";
+      document.getElementById("box-inner2").style.display = "block";
+      // document.getElementsByClassName('box-inner2').style.display = "block";
+    }
+    function myscriptOff() {
+      document.getElementById("box-inner").style.display = "block";
+      document.getElementById("box-inner2").style.display = "none";
+      // document.getElementsByClassName('box-inner2').style.display = "block";
+    }
+
+  </script>
+</body>
+
+</html>

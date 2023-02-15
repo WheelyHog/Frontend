@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.item{
+  border: 1px solid red;
+}
+/* .items{
+  display: grid;
+  gap: 5px;
+  /* grid-template-columns: minmax(300px, 400px); */
+  /* grid-template-columns: minmax(auto, 400px); */
+  /* grid-template-columns: minmax(300px, 1fr); */
+  /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  /* grid-template-columns: [start] 100px [middle-first] 100px [middle-second] 100px [middle-third] 100px [middle-fourth] 100px [end];
+  grid-template-rows: [start] 100px [middle-first] 100px [middle-second] 100px [end]; */
+  /* grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 100px);
+  grid-auto-columns: 300px;
+  grid-auto-rows: 300px; 
+
+
+} */
+
+/* .item:nth-child(1){
+  grid-column: start / middle-second;
+  grid-row: start / middle-second;
+} */
+
+/* .item:nth-child(10){
+  grid-column: start / middle-first;
+  grid-row: start / middle-first;
+}
+.item:nth-child(8){
+  grid-column: middle-second;
+  grid-row: start / middle-first;
+}
+.item:nth-child(4){
+  grid-column: middle-third;
+  grid-row: middle-first / end;
+}
+.item:nth-child(5){
+  grid-column: middle-second;
+  grid-row: middle-first / end;
+}
+
+.item:nth-child(6){
+  grid-column: middle-fourth;
+  grid-row: start / end;
+}
+.item:nth-child(7){
+  grid-column: middle-first;
+  grid-row: middle-first / end;
+} */
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 150px minmax(200px, 1fr);
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas: "header header"
+                       "aside main"
+                       "footer footer";
+}
+
+header{
+  background-color: aqua;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 150px minmax(200px, 1fr);
+  grid-auto-rows: 100px;
+}
+
+.logo img{
+  height: 100%;
+}
+
+.menu ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 100px;
+  font-size: 20px;
+  align-items: center;
+}
+
+aside{
+  background-color: blueviolet;
+  /* grid-area: aside; */
+
+}
+
+main{
+  background-color: chartreuse;
+  grid-area: main;
+  display: grid;
+  gap: 3px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+}
+
+footer{
+  background-color: darkcyan;
+  /* grid-area: footer; */
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+.img-1{
+  background-image: url("https://thumbs.dreamstime.com/b/merry-christmas-happy-new-year-12013550.jpg");
+}
+.img-2{
+  background-image: url("https://images.unsplash.com/photo-1546708623-6e5671915b91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OXx8fGVufDB8fHx8&w=1000&q=80");
+}
+.img-3{
+  background-image: url("https://parade.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkwNTc2MDAyMTcyMzMxMTMz/winter-instagram-captions-1-jpg.jpg");
+}
+.img-4{
+  background-image: url("https://play-lh.googleusercontent.com/kqjV1NiiN03IHiZMW9x0tT06M9VhMi-kkivdIjJFnfDX0wSWkDab7DLHKM5pFq1ggRA");
+}
+.img-5{
+  background-image: url("https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_teaser_image/2019-12/coffee-1156595_960_720.jpg?itok=mJg12Q0e");
+}
+.img-6{
+  background-image: url("https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/tnc_16026894.jpg?crop=0%2C359%2C3986%2C2647&wid=828&hei=550&scl=4.814009661835748");
+}
+.img-7{
+  background-image: url("https://media1.popsugar-assets.com/files/thumbor/sf4c5ByP_O1Z4olnJ4NgriZaRmU/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/01/07/708/n/1922441/b3449ae85e14ab2b9cc193.51764614_GettyImages-/i/Best-Winter-Photos.jpg");
+}
+.img-8{
+  background-image: url("https://images.theconversation.com/files/306448/original/file-20191211-95111-fbz9rf.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop");
+}
+.img-9{
+  background-image: url("https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/tnc_11065968.jpg?crop=0%2C2%2C1920%2C1275&wid=828&hei=550&scl=2.318840579710145");
+}
+.img-10{
+  background-image: url("https://cdn.whistler.com/s3/images/winter2022/whistler-village.jpg");
+}
+.img-11{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDt_10whmdT8fUZYU1C16narfTsAK2DYIt3Q&usqp=CAU");
+}
+.img-12{
+  background-image: url("https://i.pinimg.com/236x/7e/59/8e/7e598eb77d3f9b62059f83a31b2095b0.jpg");
+}
+.img-13{
+  background-image: url("https://thumbs.dreamstime.com/b/merry-christmas-happy-new-year-12013550.jpg");
+}
