@@ -127,3 +127,15 @@ function setRating(rating) {
 getProducts(url);
 
 {/* <i class="fa-solid fa-basket-shopping-simple"></i> */ }
+
+
+// function sortElems(data, type){
+//   if (type === '1'){
+//       data.sort((crElem, nxElem) => crElem.price - nxElem.price)
+//   } else if (type === '2'){
+//       data.sort((crElem, nxElem) => nxElem.price - crElem.price)
+//   } else if (type === '0'){
+//       data.sort((crElem, nxElem) => crElem.id - nxElem.id)
+//   }
+//   return data
+// }

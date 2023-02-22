@@ -27,7 +27,7 @@
 
 
 let li = document.body.firstElementChild.firstElementChild.lastElementChild.style.fontWeight = "bold"
-let header = document.body.firstElementChild.nextElementSibling
-header.replaceChild('h2', 'p')
+let header = document.body.firstElementChild.nextElementSibling.firstElementChild
+header.innerHTML = `<p>${header.innerHTML}</p>`
 console.log(li);
 console.log(header);

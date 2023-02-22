@@ -1,0 +1,18 @@
+#root {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+}
+
+.user_card {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.user_card img {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
