@@ -92,6 +92,48 @@ body {
   font-size: 36px;
 }
 
+.menu_btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.line {
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: #222;
+  margin: 5px;
+  border-radius: 2px;
+  transition: all .5s;
+}
+
+/* -----------------------mobile_menu------------------------ */
+.modal {
+  background-color: rgba(162, 156, 156, .7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 120px;
+  align-items: center;
+}
+
+.mobile_menu {
+  padding: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.mobile_menu_item a {
+  text-decoration: none;
+  color: var(--header-color);
+  font-weight: 700;
+}
+
 /* -----------------------banner -------------------------- */
 
 .banner_frame {
@@ -332,14 +374,6 @@ body {
   width: 100%;
   z-index: 0;
 }
-
-/* .clients_slider {
-  top: -180px;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-} */
 
 .clients_title {
   margin-bottom: 80px;

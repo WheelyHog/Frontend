@@ -102,3 +102,74 @@ let feedback_left_btn = document.querySelector('.f_arrow_left')
 let feedback_dot_list = document.querySelectorAll('.feedback_dot')
 
 changeSlide(sliderCount = 0, feedbackSlider, feedback_right_btn, feedback_left_btn, feedback_dot_list, 1110, 'feedback_dot_active')
+
+// --------------------------------mobile_menu-----------------------
+let parent_div = document.querySelector('.top_banner')
+
+let menu_elems = []
+let menu_links = []
+
+let menu_list = document.querySelectorAll('.menu_item a')
+console.log(menu_list);
+for (let i = 0; i < menu_list.length; i++) {
+  menu_elems.push(menu_list[i].innerText)
+  menu_links.push(menu_list[i].href)
+}
+
+function open_menu() {
+  let modal_div = document.createElement('div')
+  modal_div.className = 'modal'
+
+  let mobile_menu = document.createElement('ul')
+  mobile_menu.className = 'mobile_menu'
+
+  for (let i = 0; i < menu_list.length; i++) {
+    let mobile_menu_item = document.createElement('li')
+    mobile_menu_item.className = 'mobile_menu_item'
+    mobile_menu_item.innerHTML = `<a href=${menu_links[i]} class="mobile_link">${menu_elems[i]}</a>`
+    mobile_menu.append(mobile_menu_item)
+  }
+  modal_div.append(mobile_menu)
+  parent_div.append(modal_div)
+}
+
+function close_menu() {
+  let modal_div = document.querySelector('.modal')
+  modal_div.remove()
+}
+
+// ---------------------------lines------------------------
+
+let setModal = false;
+
+let menu_btn = document.querySelector('.menu_btn')
+let lines = document.querySelectorAll('.line')
+
+menu_btn.addEventListener('click', () => {
+  if (!setModal) {
+    lines[0].style.rotate = '45deg'
+    lines[0].style.transform = 'translate(5px, 7px)'
+
+    lines[1].style.display = 'none'
+
+    lines[2].style.rotate = '-45deg'
+    lines[2].style.transform = 'translate(-2px, -1px)'
+
+    setModal = true
+    open_menu()
+
+  } else {
+    lines[0].style.rotate = '0deg'
+    lines[0].style.transform = 'translate(0px, 0px)'
+
+    lines[1].style.display = 'block'
+
+    lines[2].style.rotate = '0deg'
+    lines[2].style.transform = 'translate(0px, 0px)'
+
+    setModal = false
+    close_menu();
+  }
+
+
+})
