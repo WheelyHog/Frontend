@@ -8,22 +8,22 @@ const banner = [
   },
   {
     id: 2,
-    title: 'Бухгалтерские услуги в вашем городе',
-    button_text: 'Наша презентация',
+    title: 'Дегустация лучших сортов пива',
+    button_text: 'Вызов специалиста',
     button_action: '',
     slider_src: './images/banner1.png'
   },
   {
     id: 3,
-    title: 'Бухгалтерские услуги в вашем городе',
-    button_text: 'Наша презентация',
+    title: 'Покормить кота в вашем городе',
+    button_text: 'Позвать на помощь',
     button_action: '',
     slider_src: './images/banner1.png'
   },
   {
     id: 4,
-    title: 'Бухгалтерские услуги в вашем городе',
-    button_text: 'Наша презентация',
+    title: 'Организация похода в горы',
+    button_text: 'Принять участие',
     button_action: '',
     slider_src: './images/banner1.png'
   },
@@ -32,8 +32,8 @@ const banner = [
 let bannerSlider = document.querySelector('.banner_slider')
 
 // let banner_frame = document.querySelector('.banner_frame')
-// let banner_title = document.querySelector('.banner_title')
-// let banner_btn = document.querySelector('.presentation_btn')
+let banner_title = document.querySelector('.banner_title')
+let banner_btn = document.querySelector('.presentation_btn')
 
 let right_btn = document.querySelector('.arrow_right')
 let left_btn = document.querySelector('.arrow_left')
@@ -65,6 +65,8 @@ function changeSlide(sliderCount = 0, bannerSlider, right_btn, left_btn, dotList
     for (let i = 0; i < banner.length; i++) {
       if (i == sliderCount) {
         dotList[i].classList.add(class_name)
+        banner_title.innerHTML = banner[i].title
+        banner_btn.innerHTML = banner[i].button_text
       } else {
         dotList[i].classList.remove(class_name)
       }
