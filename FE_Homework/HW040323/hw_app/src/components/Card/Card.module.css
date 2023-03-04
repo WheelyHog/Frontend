@@ -1,0 +1,18 @@
+.card_inner{
+    padding: 96px 70px;
+    flex: 1;
+    width: 480px;
+    height: 480px;
+    background-color: #22356F;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+}
+.card_title{
+    font-size: 32px;
+    font-style: italic;
+    color: #ffffff;
+    padding-top: 30px;
+    border-top: 2px solid gray;
+    font-weight: 400;
+    width: 340px;
+}
