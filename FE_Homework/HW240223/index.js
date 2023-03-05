@@ -28,7 +28,7 @@ const banner = [
     slider_src: './images/banner1.png'
   },
 ]
-
+let currentWidth = 1920
 let bannerSlider = document.querySelector('.banner_slider')
 
 // let banner_frame = document.querySelector('.banner_frame')
@@ -41,6 +41,7 @@ let dotList = document.querySelectorAll('.banner_dot')
 
 function changeSlide(sliderCount = 0, bannerSlider, right_btn, left_btn, dotList, slideWidth, class_name) {
   right_btn.addEventListener('click', () => {
+    // slideWidth = document.querySelector('.container').clientWidth;
     sliderCount++;
     if (sliderCount == banner.length) {
       bannerSlider.style.transform = `translateX(0px)`
@@ -50,7 +51,7 @@ function changeSlide(sliderCount = 0, bannerSlider, right_btn, left_btn, dotList
   })
 
   left_btn.addEventListener('click', () => {
-
+    // slideWidth = document.querySelector('.container').clientWidth;
     if (sliderCount != 0) {
       sliderCount--;
       bannerSlider.style.transform = `translateX(${sliderCount * -slideWidth}px)`
@@ -60,6 +61,8 @@ function changeSlide(sliderCount = 0, bannerSlider, right_btn, left_btn, dotList
     }
     setDot(sliderCount)
   })
+
+
 
   function setDot(sliderCount) {
     for (let i = 0; i < banner.length; i++) {
@@ -86,7 +89,7 @@ function changeSlide(sliderCount = 0, bannerSlider, right_btn, left_btn, dotList
   getDot()
 }
 
-changeSlide(sliderCount = 0, bannerSlider, right_btn, left_btn, dotList, 1920, 'dot_active') // top_banner
+changeSlide(sliderCount = 0, bannerSlider, right_btn, left_btn, dotList, currentWidth, 'dot_active') // top_banner
 
 // ----------------------------clients_slider-------------------------
 
@@ -103,6 +106,7 @@ let feedback_right_btn = document.querySelector('.f_arrow_right')
 let feedback_left_btn = document.querySelector('.f_arrow_left')
 let feedback_dot_list = document.querySelectorAll('.feedback_dot')
 
+
 changeSlide(sliderCount = 0, feedbackSlider, feedback_right_btn, feedback_left_btn, feedback_dot_list, 1110, 'feedback_dot_active')
 
 // --------------------------------mobile_menu-----------------------
@@ -112,13 +116,14 @@ let menu_elems = []
 let menu_links = []
 
 let menu_list = document.querySelectorAll('.menu_item a')
-console.log(menu_list);
+
 for (let i = 0; i < menu_list.length; i++) {
   menu_elems.push(menu_list[i].innerText)
   menu_links.push(menu_list[i].href)
 }
 
 function open_menu() {
+
   let modal_div = document.createElement('div')
   modal_div.className = 'modal'
 

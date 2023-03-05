@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slider{
+  border: 1px solid black;
+  margin: 0 auto;
+  /*width: 100vw;*/
+  overflow: hidden;
+  /*height: 670px;*/
+  position: relative;
+}
+.slider-line{
+  display: flex;
+  transition: all ease .8s;
+}
+.slider-line img{
+  /*height: 670px;*/
+}
+.text-line{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: flex;
+  transition: all ease .8s;
+}
+.text-item{
+  width: 100vw;
+}
+
+.text-item button{
+  background-color: dodgerblue;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+}
+
+.text-item p{
+  font-size: 30px;
+  color: white;
+  margin-bottom: 80px;
+}
