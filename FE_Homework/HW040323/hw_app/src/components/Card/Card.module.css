@@ -3,8 +3,6 @@
     flex: 1;
     width: 480px;
     height: 480px;
-    background-color: #22356F;
-    border: 1px solid #ffffff;
     box-sizing: border-box;
 }
 .card_title{
@@ -12,7 +10,7 @@
     font-style: italic;
     color: #ffffff;
     padding-top: 30px;
-    border-top: 2px solid gray;
+    border-top: 2px solid #ffffff;
     font-weight: 400;
     width: 340px;
 }
