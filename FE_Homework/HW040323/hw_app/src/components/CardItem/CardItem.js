@@ -1,5 +1,5 @@
-import styles from "./Card.module.css"
-function Card(props){
+import styles from "./CardItem.module.css"
+function CardItem(props){
     return(
         <div className={styles.card_inner} style={{backgroundColor : `${props.color}`}}>
             <h2 className={styles.card_title}>{props.title}</h2>
@@ -8,4 +8,4 @@ function Card(props){
     )
 }
 
-export default Card
+export default CardItem

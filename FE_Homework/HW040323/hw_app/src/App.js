@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
 import Services from "./components/Services/Services";
 import About from "./components/About/About";
-import Cards from "./components/Cards/Cards";
+import CardsList from "./components/CardsList/CardsList";
 import Rental from "./components/Rental/Rental";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
             <Banner/>
             <Services />
             <About />
-            <Cards />
+            <CardsList />
             <Rental />
         </div>
     );
