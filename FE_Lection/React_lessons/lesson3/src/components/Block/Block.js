@@ -2,11 +2,12 @@ import React from 'react'
 import './Block.css'
 
 function Block(props) {
-  const { title, post, color, size } = props
+  const { title, post, color, size, isRead } = props
   return (
     <div className={`block_item ${size}`} style={{ backgroundColor: color, }}>
       <h2 >{title}</h2>
       <p>{post}</p>
+      {isRead && <p>Read</p>}
     </div>
   )
 }
