@@ -1,0 +1,14 @@
+.day {
+  margin-top: 50px;
+  display: flex;
+  background-color: #ECF0F1;
+}
+
+.day>p {
+  color: #fff;
+  background-color: #34495E;
+}
+
+.day>div {
+  margin: 10px;
+}

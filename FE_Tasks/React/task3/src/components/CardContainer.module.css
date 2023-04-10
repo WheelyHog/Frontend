@@ -1,0 +1,19 @@
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.form input{
+  border: 1px solid royalblue;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.form button{
+  height: 34px;
+  background-color: royalblue;
+  color: #fff ;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

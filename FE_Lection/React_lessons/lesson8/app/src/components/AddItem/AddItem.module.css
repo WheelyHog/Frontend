@@ -1,0 +1,12 @@
+.input_container {
+  display: flex;
+  justify-content: center;
+}
+
+.input_elem {
+  width: 300px;
+  margin: 20px;
+  box-shadow: 5px 5px 15px royalblue;
+  border: 1px solid royalblue;
+  outline: none;
+}

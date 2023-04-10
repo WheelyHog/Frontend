@@ -1,0 +1,8 @@
+.triggers_container button{
+    background-color: royalblue;
+    height: 30px;
+    margin-right: 10px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}

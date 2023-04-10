@@ -1,0 +1,25 @@
+.select_section {
+  display: flex;
+  gap: 30px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.choise_section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 520px;
+}
+
+.select_section div {
+  flex: 1;
+}
+
+select {
+  width: 100%;
+}

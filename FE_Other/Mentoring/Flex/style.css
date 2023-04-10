@@ -1,0 +1,13 @@
+* {
+    font-size: 10px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    width: 200px;
+    border: 1px solid blue;
+
+}

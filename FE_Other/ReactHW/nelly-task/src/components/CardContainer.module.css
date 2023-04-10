@@ -1,0 +1,26 @@
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+
+.input_container {
+  display: flex;
+  gap: 10px;
+}
+
+.input_container input {
+  height: 30px;
+  border: 2px solid royalblue;
+  border-radius: 5px;
+}
+
+.container button {
+  background-color: royalblue;
+  color: #fff;
+  border: 2px solid royalblue;
+  border-radius: 5px;
+  height: 36px;
+  margin-right: 10px;
+  cursor: pointer;
+}
