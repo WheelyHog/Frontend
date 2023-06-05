@@ -1,4 +1,5 @@
 import {useDispatch, useSelector} from "react-redux";
+import {addProductAction} from "../../store/reducer/ProductsReducer";
 
 const AddProduct = () => {
     // const state = useSelector(state => state)
@@ -8,14 +9,7 @@ const AddProduct = () => {
         e.preventDefault();
         const {title, price, discount} = e.target
 
-        dispatch({
-            type: 'ADD_PRODUCT', payload: {
-                id: Date.now(),
-                title: title.value,
-                price: price.value,
-                discount: discount.value
-            }
-        })
+        dispatch(addProductAction(title.value, price.value, discount.value))
 
         title.value = '';
         price.value = '';

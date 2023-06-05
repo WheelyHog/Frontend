@@ -1,0 +1,21 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: aquamarine;
+  padding: 30px;
+}
+
+form {
+  margin: 0 auto;
+  border: 1px solid royalblue;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px royalblue;
+}
+
+form input {
+  padding: 3px;
+  margin-right: 5px;
+  width: 300px;
+  margin-bottom: 20px;
+}

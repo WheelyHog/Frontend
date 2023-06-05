@@ -1,0 +1,10 @@
+1. Создать две страницы ConfigurationsPage (главная) и TeamsPage
+2. Создать NavMenu с кнопками Configurations и Teams, стилизовать
+2. Настроить между страницами роутинг + переключение на странице при клике на пункты меню
+4. Создать AddTeamForm (p, input, button). При сабмите формы данные из инпута собирались и выводились в консоль
+5. Импортировать AddTeamForm на главную (ConfigurationsPage)
+8. При сабмите AddPlayerForm добавлять в массив players объект с описанием игрока (id, firstname, team)
+9. Создать PlayersContantainer и Player
+10. Из массива players отрисовать карточки игроков (Player) в PlayersContantainer
+11. PlayersContantainer импортировать в TeamsPage
+12. Реализовать удаление карточки игрока по клику на нее

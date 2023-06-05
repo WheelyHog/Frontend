@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import AddUserForm from "./components/AddUserForm/AddUserForm";
 import UsersContainer from "./components/UsersContainer/UsersContainer";
-import { getUsers } from "./requests/users_req";
+import { getUsers, add_User } from "./requests/users_req";
 
 function App() {
 
@@ -13,17 +13,14 @@ function App() {
     const { email, name, password, avatar } = e.target
 
     const newUser = {
-      id: Date.now(),
       email: email.value,
       name: name.value,
       password: password.value,
       avatar: avatar.value,
       role: 'customer',
-      creationAt: Date(),
-      updatedAt: Date()
     }
-    users.push(newUser)
-    setUsers(users)
+    // add_User(newUser, setUsers([...users, newUser]))
+    add_User(newUser, (newUser) => setUsers([...users, newUser]))
   }
 
   return (

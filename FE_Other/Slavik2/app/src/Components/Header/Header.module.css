@@ -1,0 +1,25 @@
+.header{
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+    background-color: #F4F9E2;
+}
+
+.menu ul{
+    display: flex;
+    gap: 70px;
+    list-style: none;
+}
+
+li:hover{
+    border-bottom: 2px solid black;
+}
+
+.btn{
+    padding: 17px 39px;
+    color: white;
+    background-color: #F9B640;
+    border-radius: 50px;
+    border: none;
+}

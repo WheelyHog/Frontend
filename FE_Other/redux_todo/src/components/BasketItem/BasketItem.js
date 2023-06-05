@@ -1,14 +1,18 @@
 import s from './BasketItem.module.css'
 import {useDispatch} from "react-redux";
-const BasketItem = ({id, count}) => {
+import {decrCountAction, incrCountAction, removeItemAction} from "../../store/reducer/BasketReducer";
+
+const BasketItem = ({id, title, price, count}) => {
     const dispatch = useDispatch()
     return (
         <div className={s.item}>
             <p>ID: {id}</p>
-            <button onClick={() => dispatch({type: 'DECR_COUNT', payload: id})}>-</button>
+            <p>Title: {title}</p>
+            <p>Price: {price}</p>
+            <button onClick={() => dispatch(decrCountAction(id))}>-</button>
             <p>Count: {count}</p>
-            <button onClick={() => dispatch({type: 'INCR_COUNT', payload: id})}>+</button>
-
+            <button onClick={() => dispatch(incrCountAction(id))}>+</button>
+            <button onClick={() => dispatch(removeItemAction(id))}>Remove Product</button>
         </div>
     )
 }

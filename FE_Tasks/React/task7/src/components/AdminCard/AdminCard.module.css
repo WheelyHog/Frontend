@@ -1,0 +1,10 @@
+.user {
+  border: 1px solid gray;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.user img {
+  width: 100%;
+}

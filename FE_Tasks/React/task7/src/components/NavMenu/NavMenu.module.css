@@ -1,0 +1,23 @@
+.menu {
+  display: flex;
+  font-weight: bold;
+  gap: 20px;
+  text-transform: uppercase;
+  background-color: lightgray;
+  justify-content: center;
+  padding: 20px;
+}
+
+.menu_item {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  text-decoration: none;
+  color: rgb(77, 77, 77);
+  transition: all .3s;
+}
+
+.menu_item:hover {
+  background-color: rgb(77, 77, 77);
+  color: #fff;
+}

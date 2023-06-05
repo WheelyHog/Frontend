@@ -1,4 +1,6 @@
 import {useDispatch} from "react-redux";
+import {deleteProductAction} from "../../store/reducer/ProductsReducer";
+import {addToBasketAction} from "../../store/reducer/BasketReducer";
 
 const Product =({id, title, price}) =>{
     const dispatch = useDispatch()
@@ -6,8 +8,8 @@ const Product =({id, title, price}) =>{
         <div>
             <p>{title}</p>
             <p>{price}</p>
-            <button onClick={() => dispatch({type: 'DELETE', payload: id})}>remove product</button>
-            <button onClick={() => dispatch({type: 'ADD_TO_BASKET', payload: id})}>add to basket</button>
+            <button onClick={() => dispatch(deleteProductAction(id))}>remove product</button>
+            <button onClick={() => dispatch(addToBasketAction(id))}>add to basket</button>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import {useSelector} from "react-redux";
 import Product from "../Product/Product";
-import s from '../BasketList/BasketList.module.css'
+// import s from '../BasketList/BasketList.module.css'
 
 const ProductsList = () => {
 
